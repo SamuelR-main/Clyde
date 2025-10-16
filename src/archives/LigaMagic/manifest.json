@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Cards Downloader",
+    "version": "1.0",
+    "description": "Baixar automaitcamente todos os cards da Edição",
+    "permissions": [
+        "downloads",
+        "scripting",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://www.ligamagic.com.br/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Baixar Cards"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.ligamagic.com.br/*"],
+            "js": ["content.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["content.js"],
+            "matches": ["https://www.ligamagic.com.br/*"]
+        }
+    ]
+}
