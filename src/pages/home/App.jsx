@@ -25,7 +25,12 @@ function App() {
             <h1 className="text-white text-[10px]">Planet Red</h1>
           </div>
         </Link>
-        <div className="flex flex-row w-[100px] h-[100px] bg-amber-300"></div>
+        <Link to="/estacio">
+          <div className="flex flex-col w-[100px] h-[100px] items-center justify-center hover:border-2 hover:border-dashed hover:cursor-pointer hover:border-white">
+            <img src={planetRed} alt="" className="w-18 h-18 hover:w-20 hover:h-20"/>
+            <h1 className="text-white text-[10px]">Estacio</h1>
+          </div>
+        </Link>
         <div className="flex flex-row w-[100px] h-[100px] bg-amber-300"></div>
         <div className="flex flex-row w-[100px] h-[100px] bg-amber-300"></div>
         <div className="flex flex-row w-[100px] h-[100px] bg-amber-300"></div>
